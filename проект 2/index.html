@@ -12,11 +12,21 @@
 <body>
     <header>
         <div class="header">
+           <!--
+            TODO: По BEM в данном случае logo это отдельный блок, поэтому header__ нужно убрать
+            -->
             <div class="header__logo">
                 <img src="images/Logo.svg" alt="logo">
             </div>
+            <!--
+            TODO: По BEM nav отдедльный блок, поэтому header__ нужно убрать
+            -->
             <div class="header__nav">
                 <ul>
+                    <!-- 
+                    TODO:  list и btn - лишние дополнительные классы, достаточно nav__item, nav__link
+                    TODO:  nav__link надо переименовать в  nav__item в тегах li
+                    -->
                     <li class="header__nav__link list"><a href="#" class="header__nav__link btn">Приложение</a></li>
                     <li class="header__nav__link list"><a href="#" class="header__nav__link btn">Сайт</a></li>
                     <li class="header__nav__link list"><a href="#" class="header__nav__link btn">Магазин</a></li>
@@ -28,27 +38,40 @@
         </div>
     </header>
     <section class="content">
+        <!-- TODO: ПО BEM это отдельный блок, его можно например назвать просто text или content-text -->
         <div class="content__text">
+            <!-- TODO: ПО BEM будет правильно text-title или content-text__title -->
             <p class="content__text__title">приложение для музыкантов</p>
+            <!-- TODO: лучше незвать это content-text__subtitle -->
             <p class="content__text__main">Приложение созданное муызкантами для музыкантов</p>
         </div>
+        <!-- TODO: по BEM будет правильно content-image -->
         <div class="content__image">
+            <!-- TODO: по BEM будет правильно content-image__background -->
             <img class="content__image_background" src="images/1-Blur-tr.svg" alt="background2">
+            <!-- TODO: по BEM будет правильно content-image__objets -->
             <img class="content__image_objets" src="images/Объекты.svg" alt="objects">
+            <!-- TODO: по BEM будет правильно content-image__rectangle -->
             <img class="content__image_rectangle" src="images/Rectangle 26.svg" alt="rectangle">
+            <!-- TODO: по BEM left-btm это модификатор, поэтому тут будет два класса content-image__background и content-image__background--left -->
             <img class="content__image_background_left" src="images/2-Blur-bl.svg" alt="background3">
+            <!-- TODO: по BEM left-btm это модификатор, поэтому тут будет два класса content-image__background и content-image__background--left-btm -->
             <img class="content__image_background_left-btm" src="images/1-Blur-bl.svg" alt="background4">
         </div>
+          <!-- TODO: C footer также проблема с наименованиаем что и в header -->
         <div class="footer">
             <div class="footer__advntg">
+                <!-- TODO: нужно проствить правильный класс для p и перенести в stels.css-->
                 <p style="font-size: 30px; font-weight: 500;">35 000+</p>
                 <p style="font-size: 15px; font-weight: 400;">постов с нужной и полезной информацией</p>
             </div>
             <div class="footer__advntg">
+                <!-- TODO: нужно проствить правильный класс для p и перенести в stels.css-->
                 <p style="font-size: 30px; font-weight: 500;">1500$</p>
                 <p style="font-size: 15px; font-weight: 400;">доход за активость в приложении</p>
             </div>
             <div class="footer__advntg_third">
+                <!-- TODO: нужно проствить правильный класс для p и перенести в stels.css-->
                 <p style="font-size: 30px; font-weight: 500;">200+ пользователей</p>
                 <img src="images/Foto.svg" alt="photo">
             </div>
